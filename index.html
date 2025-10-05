@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Flagger - Clarity in the Noise. The Future of Social Media Screening.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy': '#0A2540',
+                        'teal': '#00A699',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0A2540 0%, #1a3a5a 100%);
+        }
+        .hero-pattern {
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(0, 166, 153, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 166, 153, 0.08) 0%, transparent 50%);
+        }
+        .icon-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .icon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 166, 153, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Hero Section -->
+    <section class="gradient-bg hero-pattern min-h-screen flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 relative z-10">
+            <div class="text-center">
+                <!-- Logo/Brand -->
+                <div class="mb-6">
+                    <h1 class="text-white text-2xl font-bold tracking-wider mb-2">
+                        <span class="text-5xl">🚩</span> RED FLAGGER
+                    </h1>
+                    <p class="text-teal text-sm font-medium tracking-wide uppercase">
+                        Clarity in the Noise. The Future of Social Media Screening.
+                    </p>
+                </div>
+
+                <!-- Main Headline -->
+                <h2 class="text-white text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-8 max-w-5xl mx-auto">
+                    Automated Social Media Intelligence. Mitigate Risk, Hire with Confidence.
+                </h2>
+
+                <!-- Sub-headline -->
+                <p class="text-gray-300 text-xl sm:text-2xl leading-relaxed mb-12 max-w-4xl mx-auto">
+                    Red Flagger uses advanced AI to provide fast, compliant, and explainable social media background checks, protecting your organization from reputational, legal, and security threats.
+                </p>
+
+                <!-- CTA Button -->
+                <a href="#footer" class="cta-button inline-block bg-teal text-white font-semibold text-lg px-12 py-5 rounded-lg shadow-lg">
+                    Request an Investor Deck
+                </a>
+
+                <!-- Visual Element -->
+                <div class="mt-20 max-w-4xl mx-auto">
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
+                        <svg class="w-full h-64" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Network Graph Visualization -->
+                            <defs>
+                                <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00A699;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0A2540;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Connections -->
+                            <line x1="400" y1="150" x2="200" y2="80" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+                            <line x1="400" y1="150" x2="600" y2="80" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+                            <line x1="400" y1="150" x2="150" y2="220" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+                            <line x1="400" y1="150" x2="650" y2="220" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+                            <line x1="200" y1="80" x2="100" y2="150" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+                            <line x1="600" y1="80" x2="700" y2="150" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+                            <!-- Nodes -->
+                            <circle cx="400" cy="150" r="20" fill="url(#nodeGradient)" opacity="0.9"/>
+                            <circle cx="200" cy="80" r="15" fill="#00A699" opacity="0.8"/>
+                            <circle cx="600" cy="80" r="15" fill="#00A699" opacity="0.8"/>
+                            <circle cx="150" cy="220" r="12" fill="#00A699" opacity="0.7"/>
+                            <circle cx="650" cy="220" r="12" fill="#00A699" opacity="0.7"/>
+                            <circle cx="100" cy="150" r="10" fill="#00A699" opacity="0.6"/>
+                            <circle cx="700" cy="150" r="10" fill="#00A699" opacity="0.6"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="text-navy text-4xl sm:text-5xl font-bold mb-6">
+                    The Hiring Blind Spot: Social Media is a Minefield of Unseen Risk.
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Icon 1: Legal Risk -->
+                <div class="icon-card bg-white rounded-xl p-8 shadow-md">
+                    <div class="text-teal text-5xl mb-6">⚖️</div>
+                    <h3 class="text-navy text-xl font-bold mb-4">Legal Risk</h3>
+                    <p class="text-gray-700 font-semibold mb-4">
+                        Manual screening is a compliance nightmare, exposing you to bias and discrimination claims.
+                    </p>
+                    <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-teal">
+                        <p class="text-gray-600 text-sm italic">
+                            "Imagine your consular staff spending weeks manually scrolling through social media, trying to understand an applicant's background. This ad-hoc, manual process is not only inefficient but creates inconsistent, unstandardized reviews prone to human bias and legal challenge. As an American Embassy in Turkey, the current policy of lengthy social media checks for visa applicants can extend processing times to months, impacting hundreds of lives and creating significant administrative burden and backlogs."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Icon 2: Data Overload -->
+                <div class="icon-card bg-white rounded-xl p-8 shadow-md">
+                    <div class="text-teal text-5xl mb-6">🧠</div>
+                    <h3 class="text-navy text-xl font-bold mb-4">Data Overload</h3>
+                    <p class="text-gray-700 font-semibold mb-4">
+                        Analysts waste countless hours sifting through irrelevant public data, missing critical signals.
+                    </p>
+                    <div class="bg-gray-50 p-4 rounded-lg mt-auto">
+                        <p class="text-gray-600 text-sm">
+                            The volume of social media data is overwhelming. HR teams and analysts don't have the tools or time to systematically review everything, leading to inconsistent results and missed warning signs that matter.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Icon 3: Reputation Damage -->
+                <div class="icon-card bg-white rounded-xl p-8 shadow-md">
+                    <div class="text-teal text-5xl mb-6">🛡️</div>
+                    <h3 class="text-navy text-xl font-bold mb-4">Reputation Damage</h3>
+                    <p class="text-gray-700 font-semibold mb-4">
+                        A single bad hire can lead to significant brand damage, internal conflict, and security incidents.
+                    </p>
+                    <div class="bg-gray-50 p-4 rounded-lg mt-auto">
+                        <p class="text-gray-600 text-sm">
+                            Organizations face real consequences when problematic behavior surfaces after hiring. From PR crises to workplace safety concerns, the cost of a preventable hiring mistake can be devastating.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="text-navy text-4xl sm:text-5xl font-bold mb-6">
+                    Introducing Red Flagger: Your AI-Powered Co-Pilot for Due Diligence.
+                </h2>
+            </div>
+
+            <div class="space-y-16">
+                <!-- Feature 1 -->
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <div class="bg-gradient-to-br from-navy to-blue-900 rounded-2xl p-12 text-white">
+                            <div class="text-6xl mb-6">🔍</div>
+                            <h3 class="text-3xl font-bold mb-4">Comprehensive AI Analysis</h3>
+                            <p class="text-lg text-gray-300">
+                                Our proprietary NLP and Computer Vision pipelines scan public data for predefined risk categories, including hate speech, threats, illegal activities, and violent content. We find the signal in the noise.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="bg-gray-100 rounded-xl p-8">
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <span class="text-teal text-2xl mr-4">✓</span>
+                                    <span class="text-gray-700"><strong>Multi-Platform Scanning:</strong> Ingests data from all major social networks</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-teal text-2xl mr-4">✓</span>
+                                    <span class="text-gray-700"><strong>NLP Risk Analysis:</strong> Toxicity, hate speech, and crime-related keyword detection</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-teal text-2xl mr-4">✓</span>
+                                    <span class="text-gray-700"><strong>Computer Vision:</strong> NSFW, violence, and extremist symbol detection</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-teal text-2xl mr-4">✓</span>
+                                    <span class="text-gray-700"><strong>OCR Integration:</strong> Extract and analyze text from images</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                    <div class="md:w-1/2">
+                        <div class="bg-gradient-to-br from-teal to-green-700 rounded-2xl p-12 text-white">
+                            <div class="text-6xl mb-6">📊</div>
+                            <h3 class="text-3xl font-bold mb-4">Explainable & Actionable Reports</h3>
+                            <p class="text-lg text-gray-100">
+                                Move beyond simple scores. Our system generates detailed, auditable reports that surface the specific content of concern, providing clear context for your human review process.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="bg-gray-100 rounded-xl p-8">
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <span class="text-teal text-2xl mr-4">✓</span>
+                                    <span class="text-gray-700"><strong>Per-Post Flagging:</strong> See exactly what triggered each alert</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-teal text-2xl mr-4">✓</span>
+                                    <span class="text-gray-700"><strong>Risk Scoring:</strong> Aggregated scores with clear rationale</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-teal text-2xl mr-4">✓</span>
+                                    <span class="text-gray-700"><strong>Exportable Formats:</strong> PDF and JSON reports for your workflow</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-teal text-2xl mr-4">✓</span>
+                                    <span class="text-gray-700"><strong>Human Review Dashboard:</strong> Interface for appeals and final decisions</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <div class="bg-gradient-to-br from-blue-900 to-navy rounded-2xl p-12 text-white">
+                            <div class="text-6xl mb-6">🔒</div>
+                            <h3 class="text-3xl font-bold mb-4">Compliance and Privacy First</h3>
+                            <p class="text-lg text-gray-300">
+                                Built from the ground up to respect legal and ethical boundaries. Red Flagger focuses on job-relevant risk factors and helps mitigate bias within a clear, consent-driven framework.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="bg-gray-100 rounded-xl p-8">
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <span class="text-teal text-2xl mr-4">✓</span>
+                                    <span class="text-gray-700"><strong>Consent-Driven Workflow:</strong> Explicit user consent and data policies</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-teal text-2xl mr-4">✓</span>
+                                    <span class="text-gray-700"><strong>Job-Relevant Only:</strong> Focus on legitimate business concerns</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-teal text-2xl mr-4">✓</span>
+                                    <span class="text-gray-700"><strong>Bias Mitigation:</strong> Standardized, auditable processes</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-teal text-2xl mr-4">✓</span>
+                                    <span class="text-gray-700"><strong>Role-Based Access:</strong> Secure report sharing with proper controls</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="text-navy text-4xl sm:text-5xl font-bold mb-6">
+                    From Input to Insight in Three Simple Steps.
+                </h2>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-teal transform -translate-y-1/2" style="z-index: 0;"></div>
+                
+                <div class="grid md:grid-cols-3 gap-8 relative" style="z-index: 1;">
+                    <!-- Step 1 -->
+                    <div class="text-center">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg mb-6 icon-card">
+                            <div class="w-20 h-20 bg-teal rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6">
+                                1
+                            </div>
+                            <h3 class="text-navy text-2xl font-bold mb-4">Submit Handles</h3>
+                            <p class="text-gray-700 text-lg">
+                                Securely input the candidate's publicly available social media handles through our dashboard.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="text-center">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg mb-6 icon-card">
+                            <div class="w-20 h-20 bg-teal rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6">
+                                2
+                            </div>
+                            <h3 class="text-navy text-2xl font-bold mb-4">AI Analyzes</h3>
+                            <p class="text-gray-700 text-lg">
+                                Our system scans and analyzes public content in minutes, not days.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="text-center">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg mb-6 icon-card">
+                            <div class="w-20 h-20 bg-teal rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6">
+                                3
+                            </div>
+                            <h3 class="text-navy text-2xl font-bold mb-4">Review Report</h3>
+                            <p class="text-gray-700 text-lg">
+                                Receive a comprehensive, easy-to-understand risk report.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Markets Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="text-navy text-4xl sm:text-5xl font-bold mb-6">
+                    Built for Two Core Missions.
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- For Individuals -->
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-10 border-2 border-gray-200">
+                    <div class="text-5xl mb-6">👤</div>
+                    <h3 class="text-navy text-3xl font-bold mb-6">For Individuals</h3>
+                    <p class="text-gray-700 text-lg font-semibold mb-6">
+                        Empowering individuals to audit and understand their own digital footprint before job or visa applications.
+                    </p>
+                    <div class="bg-white p-6 rounded-lg border-l-4 border-teal shadow-sm">
+                        <p class="text-gray-600 italic">
+                            "Imagine you're on the cusp of fame, or applying for a high-profile visa. An old, forgotten social media post could resurface, causing public outrage or visa denial. Red Flagger allows you to proactively identify and address potential 'red flags' on your profiles, ensuring your online presence reflects your current values and goals, safeguarding your future."
+                        </p>
+                    </div>
+                    <div class="mt-6 space-y-3">
+                        <div class="flex items-center">
+                            <span class="text-teal mr-3">•</span>
+                            <span class="text-gray-700">Pre-employment self-screening</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-teal mr-3">•</span>
+                            <span class="text-gray-700">Visa application preparation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-teal mr-3">•</span>
+                            <span class="text-gray-700">Public figure reputation management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- For Organizations -->
+                <div class="bg-gradient-to-br from-navy to-blue-900 rounded-2xl p-10 border-2 border-navy text-white">
+                    <div class="text-5xl mb-6">🏢</div>
+                    <h3 class="text-white text-3xl font-bold mb-6">For Organizations</h3>
+                    <p class="text-gray-200 text-lg font-semibold mb-6">
+                        Providing employers, screening services, and institutions with a scalable, standardized, and legally-sound screening tool.
+                    </p>
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg border-l-4 border-teal">
+                        <p class="text-gray-200">
+                            From Fortune 500 companies to government agencies, organizations need reliable, defensible screening processes. Red Flagger provides the technology infrastructure to make social media due diligence systematic, transparent, and compliant with employment law.
+                        </p>
+                    </div>
+                    <div class="mt-6 space-y-3">
+                        <div class="flex items-center">
+                            <span class="text-teal mr-3">•</span>
+                            <span class="text-gray-200">Corporate HR departments</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-teal mr-3">•</span>
+                            <span class="text-gray-200">Background screening services</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-teal mr-3">•</span>
+                            <span class="text-gray-200">Government agencies & consulates</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-teal mr-3">•</span>
+                            <span class="text-gray-200">Educational institutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Opportunity Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="text-navy text-4xl sm:text-5xl font-bold mb-6">
+                    A New Standard for a Growing Market.
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Stat 1 -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg text-center icon-card">
+                    <div class="text-teal text-6xl font-bold mb-4">$5B+</div>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        The background screening services market is projected to reach over <strong>$5 billion by 2028</strong>.
+                    </p>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg text-center icon-card">
+                    <div class="text-teal text-6xl font-bold mb-4">📈</div>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        <strong>Increasing regulatory and social pressure</strong> makes automated, unbiased solutions a necessity.
+                    </p>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg text-center icon-card">
+                    <div class="text-teal text-6xl font-bold mb-4">🚀</div>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Our unique technology, <strong>combining NLP and computer vision</strong>, creates a significant competitive advantage.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-navy rounded-2xl p-12 text-white text-center">
+                <h3 class="text-3xl font-bold mb-6">Why Red Flagger Wins</h3>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
+                    <div>
+                        <h4 class="text-teal text-xl font-bold mb-3">Technology Moat</h4>
+                        <p class="text-gray-300">
+                            Proprietary ML models trained on risk detection, not generic sentiment analysis. Our computer vision pipeline is purpose-built for screening use cases.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-teal text-xl font-bold mb-3">Regulatory Alignment</h4>
+                        <p class="text-gray-300">
+                            Designed with FCRA, GDPR, and employment law compliance in mind. We're not just a tool—we're a compliant system.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-teal text-xl font-bold mb-3">Dual Revenue Streams</h4>
+                        <p class="text-gray-300">
+                            B2B SaaS for enterprises and B2C self-service for individuals creates diversified, recurring revenue.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-teal text-xl font-bold mb-3">First-Mover Advantage</h4>
+                        <p class="text-gray-300">
+                            Social media screening is still nascent. We're establishing the category and setting the standard before competitors catch up.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="gradient-bg py-20">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+            <h2 class="text-white text-4xl font-bold mb-6">Get Involved</h2>
+            <p class="text-gray-300 text-xl mb-10 max-w-2xl mx-auto">
+                Join us in building the future of social media screening. Request our investor deck to learn more about the opportunity.
+            </p>
+            
+            <a href="mailto:investors@redflagger.ai" class="cta-button inline-block bg-teal text-white font-semibold text-lg px-12 py-5 rounded-lg shadow-lg mb-12">
+                Request Investor Deck
+            </a>
+
+            <div class="border-t border-gray-600 pt-8 mt-12">
+                <p class="text-gray-400 mb-4">
+                    <strong>Contact:</strong> <a href="mailto:investors@redflagger.ai" class="text-teal hover:underline">investors@redflagger.ai</a>
+                </p>
+                <p class="text-gray-500 text-sm">
+                    © 2025 Red Flagger, Inc. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
